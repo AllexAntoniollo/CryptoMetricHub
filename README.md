@@ -1,6 +1,6 @@
 # CryptoMetricHub
 
-A Dapp of voluntary campaign, you can create a new campaign with a goal, or make donations to an existent campaign.
+Introducing Crypto Metric Hub, your all-in-one solution for comprehensive cryptocurrency portfolio management. Our application goes beyond traditional wallets, offering advanced metrics and hubs to empower crypto enthusiasts and investors.
 
 ## Softwares
 
