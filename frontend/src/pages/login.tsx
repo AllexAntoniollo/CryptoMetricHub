@@ -1,9 +1,13 @@
 import Header from "../components/header";
+import './login.css';
 export default function Login() {
   return (
     <>
-      <Header></Header>
-      <h1>Aqui vai o HTML do Login</h1>
+    <div className="detail_radius"></div>{/* detail_radius*/}
+    <div className="conteiner_login">
+      <p className="conect_title">Connect your <h2>wallet</h2></p>
+    </div> {/* conteiner_login */}
+      
     </>
   );
 }
