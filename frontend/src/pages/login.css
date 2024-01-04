@@ -1,122 +1,127 @@
-html, body {
-    height: 100%;
-  }
-  
+html,
 body {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background:#2E3034;
-  }
-
-.bg_btc{
-    top: 25px;
-    right: 0;
-    position: absolute;
-    background-image: url('btc_logo.png');
-    width: 400px;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: cascata 4s linear infinite;
-  }
-
-  .bg_eth{
-    opacity: 50%;
-    bottom: 0px;
-    left: 0;
-    position: absolute;
-    background-image: url('eth_logo.png');
-    width: 400px;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: abduzir 4s linear infinite;
-  }
-
-  @keyframes cascata{
-    from{
-      top: -200px;
-    }
-    to{
-      top: 700px;
-    }
-  }
-  @keyframes abduzir{
-    from{
-      top: 700px;
-    }
-    to{
-      top: -200px;
-    }
-  }
-
-
-  .detail_radius{
-    margin: auto;
-    margin-top: -18vw;
-    background: linear-gradient(#2E3034, #2E3034) padding-box, linear-gradient(to right, #4c21ac, #f18cf4) border-box;
-    border: 50px solid transparent;
-    border-radius: 50em;
-    width: 22vw;
-    height: 22vw;
+  height: 100%;
 }
 
-.conteiner_login{
-    max-width: 1000px;
-    padding: 30px;
-    margin: auto;
-    text-align: center;
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #2e3034;
 }
 
-.conect_title{
-    padding: 10px;
-    color: white;
-    font-size: 3vw;
-    display: inline;
+.bg_btc {
+  top: 25px;
+  right: 0;
+  position: absolute;
+  background-image: url("../assets/btc_logo.png");
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: cascata 4s linear infinite;
+}
 
-    border-bottom: 10px solid;
-    border-image: linear-gradient(to right, #4c21ac, #f18cf4); /* Substitua as cores conforme necessário */
-    border-image-slice: 1;
-  }
+.bg_eth {
+  opacity: 50%;
+  bottom: 0px;
+  left: 0;
+  position: absolute;
+  background-image: url("../assets/eth_logo.png");
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: abduzir 4s linear infinite;
+}
 
-.conect_title h2{
-    font-size: 4vw;
-    display: inline;
-    color: #792cec;
+@keyframes cascata {
+  from {
+    top: -200px;
   }
-.metamask-btn{
+  to {
+    top: 700px;
+  }
+}
+@keyframes abduzir {
+  from {
+    top: 700px;
+  }
+  to {
+    top: -200px;
+  }
+}
+
+.detail_radius {
+  margin: auto;
+  margin-top: -18vw;
+  background: linear-gradient(#2e3034, #2e3034) padding-box,
+    linear-gradient(to right, #4c21ac, #f18cf4) border-box;
+  border: 50px solid transparent;
+  border-radius: 50em;
+  width: 22vw;
+  height: 22vw;
+}
+
+.conteiner_login {
+  max-width: 1000px;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.conect_title {
+  padding: 10px;
+  color: white;
+  font-size: 3vw;
+  display: inline;
+
+  border-bottom: 10px solid;
+  border-image: linear-gradient(
+    to right,
+    #4c21ac,
+    #f18cf4
+  ); /* Substitua as cores conforme necessário */
+  border-image-slice: 1;
+}
+
+.conect_title h2 {
+  font-size: 4vw;
+  display: inline;
+  color: #792cec;
+}
+.metamask-btn {
   margin: auto;
   width: 260px;
   height: 140px;
   cursor: pointer;
 }
-.metamask_logo{
+.metamask_logo {
   margin: auto;
   margin-top: 50px;
   width: 110px;
   height: 110px;
-  background-image: url('metamask.png');
+  background-image: url("../assets/metamask.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
-p.metamask_title{
+p.metamask_title {
   margin-top: -8px;
   color: white;
   font-size: 20px;
 }
-.metamask-btn:hover{
+.metamask-btn:hover {
   box-shadow: 2px 2px 5px black;
 }
 
-.form{
+.form {
   margin: auto;
   max-width: 800px;
   height: 100px;
   margin-top: 30px;
 }
-.form input[type="text"]{
+.form input[type="text"] {
   max-width: 60%;
   width: 300px;
   margin-right: 10px;
@@ -127,7 +132,7 @@ p.metamask_title{
   color: white;
 }
 
-.form input[type="submit"]{
+.form input[type="submit"] {
   max-width: 30%;
   border: 0;
   border-radius: 10px;
@@ -137,24 +142,24 @@ p.metamask_title{
   color: white;
   background-color: #f18cf4;
 }
-@media screen and (max-width:750px){
-    .detail_radius{
-        border: 25px solid transparent;
-        margin-top: -20vw;
-        width: 35vw;
-        height: 35vw;
-    }
-    .conect_title{
-        font-size: 6vw;
-    }
-    .conect_title h2{
-        font-size: 6vw;
-    }
-    
-    .bg_btc{
-      width: 200px;
-    }
-    .bg_eth{
-      width: 200px;
-    }
+@media screen and (max-width: 750px) {
+  .detail_radius {
+    border: 25px solid transparent;
+    margin-top: -20vw;
+    width: 35vw;
+    height: 35vw;
+  }
+  .conect_title {
+    font-size: 6vw;
+  }
+  .conect_title h2 {
+    font-size: 6vw;
+  }
+
+  .bg_btc {
+    width: 200px;
+  }
+  .bg_eth {
+    width: 200px;
+  }
 }
