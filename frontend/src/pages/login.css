@@ -112,11 +112,12 @@ p.metamask_title{
 
 .form{
   margin: auto;
-  width: 800px;
+  max-width: 800px;
   height: 100px;
   margin-top: 30px;
 }
 .form input[type="text"]{
+  max-width: 60%;
   width: 300px;
   margin-right: 10px;
   border-radius: 10px;
@@ -127,6 +128,7 @@ p.metamask_title{
 }
 
 .form input[type="submit"]{
+  max-width: 30%;
   border: 0;
   border-radius: 10px;
   width: 100px;
@@ -147,5 +149,12 @@ p.metamask_title{
     }
     .conect_title h2{
         font-size: 6vw;
+    }
+    
+    .bg_btc{
+      width: 200px;
+    }
+    .bg_eth{
+      width: 200px;
     }
 }
