@@ -16,6 +16,7 @@ export default function Login() {
       </div>{/* form */}
     </div> {/* conteiner_login */}
     <div className="bg_btc"></div>
+    <div className="bg_eth"></div>
       
     </>
   );

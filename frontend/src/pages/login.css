@@ -3,6 +3,7 @@ html, body {
   }
   
 body {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +19,39 @@ body {
     height: 400px;
     background-repeat: no-repeat;
     background-size: contain;
+    animation: cascata 4s linear infinite;
   }
+
+  .bg_eth{
+    opacity: 50%;
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    background-image: url('eth_logo.png');
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: abduzir 4s linear infinite;
+  }
+
+  @keyframes cascata{
+    from{
+      top: -200px;
+    }
+    to{
+      top: 700px;
+    }
+  }
+  @keyframes abduzir{
+    from{
+      top: 700px;
+    }
+    to{
+      top: -200px;
+    }
+  }
+
 
   .detail_radius{
     margin: auto;
