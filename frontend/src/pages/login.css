@@ -4,7 +4,6 @@ body {
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -142,6 +141,65 @@ p.metamask_title {
   color: white;
   background-color: #f18cf4;
 }
+
+
+/*CSS SECTION DE COTAÇÕES DA PAG DE LOGIN*/
+
+.price_section{
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #313236;
+}
+
+.price_content{
+  position: relative;
+  top: 35px;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+}
+
+.price_title{
+  padding-top: 20px;
+  margin: auto;
+  width: 30%;
+  height: 100px;
+  border-radius: 10%;
+  box-shadow: 2px 2px 5px black;
+}
+
+.price_table{
+  margin: auto;
+  margin-top: 30px;
+  width: 80%;
+  height: 500px;
+}
+
+.price_table h1{
+  font-size: 20px;
+}
+
+.w33{
+  display: inline-block;
+  width: 33%;
+  border-bottom: 2px solid rgb(27, 26, 26);
+}
+
+.cripto{
+  text-align: left;
+  font-size: 16px;
+  padding: 10px 0;
+}
+.up{
+  color: green;
+}
+.down{
+  color: red;
+}
+
 @media screen and (max-width: 750px) {
   .detail_radius {
     border: 25px solid transparent;
@@ -161,5 +219,18 @@ p.metamask_title {
   }
   .bg_eth {
     width: 200px;
+  }
+
+  .price_title{
+    width: 65%;
+  }
+
+  .price_table h1{
+    font-size: 15px;
+  }
+
+  .cripto{
+    font-size: 13px;
+    padding: 5px 0;
   }
 }
