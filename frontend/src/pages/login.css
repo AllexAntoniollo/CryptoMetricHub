@@ -90,64 +90,19 @@ body {
   display: inline;
   color: #792cec;
 }
-.metamask-btn {
+p.frase{
   margin: auto;
-  width: 260px;
-  height: 140px;
-  cursor: pointer;
-}
-.metamask_logo {
-  margin: auto;
-  margin-top: 50px;
-  width: 110px;
-  height: 110px;
-  background-image: url("../assets/metamask.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-p.metamask_title {
-  margin-top: -8px;
+  margin-top: 60px;
   color: white;
+  max-width: 80%;
   font-size: 20px;
-}
-.metamask-btn:hover {
-  box-shadow: 2px 2px 5px black;
-}
 
-.form {
-  margin: auto;
-  max-width: 800px;
-  height: 100px;
-  margin-top: 30px;
 }
-.form input[type="text"] {
-  max-width: 60%;
-  width: 300px;
-  margin-right: 10px;
-  border-radius: 10px;
-  background-color: #4c21ac;
-  padding: 8px;
-  border: 0;
-  color: white;
-}
-
-.form input[type="submit"] {
-  max-width: 30%;
-  border: 0;
-  border-radius: 10px;
-  width: 100px;
-  cursor: pointer;
-  padding: 8px;
-  color: white;
-  background-color: #f18cf4;
-}
-
-
 /*CSS SECTION DE COTAÇÕES DA PAG DE LOGIN*/
 
 .price_section{
   position: relative;
-  z-index: 999;
+  z-index: 100;
   width: 100%;
   background-color: #313236;
 }
@@ -199,6 +154,81 @@ p.metamask_title {
 .down{
   color: red;
 }
+.call_to_action{
+  font-size: 18px;
+  width: 230px;
+  max-width: 80%;
+  padding: 8px 12px;
+  background-color: #4c21ac;
+  color: white;
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.call_to_action:hover{
+  background-color: #792cec;
+}
+.call_to_action h1{
+  color: white;
+  font-size: 20px;
+}
+
+.pop_up{
+  z-index: 500;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 40%;
+  background-color: #313236;
+  box-shadow: 2px 2px 10px black;
+  animation: open 0.5s;
+}
+.closed{
+  animation: closed 0.5s;
+}
+@keyframes open{
+  from{
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  to{
+    width: 40%;
+    height: 400px;
+    opacity: 100%;
+  }
+}
+@keyframes closed{
+  from{
+    opacity: 100%;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.header_pop_up{
+  display: flex;
+  width: 100%;
+}
+.header_pop_up p{
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.xis{
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+.blur{
+  filter: blur(10px);
+}
+
 
 @media screen and (max-width: 750px) {
   .detail_radius {
@@ -232,5 +262,8 @@ p.metamask_title {
   .cripto{
     font-size: 13px;
     padding: 5px 0;
+  }
+  .pop_up p{
+    font-size: 18px;
   }
 }

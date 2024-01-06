@@ -1,27 +1,39 @@
 import Header from "../components/header";
 import "./login.css";
+import { FaTimes } from 'react-icons/fa';
+import {useState} from "react";
 export default function Login() {
+  const [connect, setConnect] = useState<string>("fechado");
+
+  function chanceConnect(){
+    if(connect === "fechado"){
+      setConnect("aberto");
+    }else{
+      setConnect("fechado");
+    }
+  }
+
+  function closedPopUp(){
+    if(connect === "aberto"){
+      chanceConnect();
+    }else{
+
+    }
+  }
   return (
     <>
+    <div className={(connect === "aberto")? "blur":""} onClick={closedPopUp}>
       <div className="detail_radius"></div>
       {/* detail_radius*/}
       <div className="conteiner_login">
         <p className="conect_title">
           Connect your <h2>wallet</h2>
         </p>
-        <div className="metamask-btn">
-          <div className="metamask_logo"></div>
-          {/* matamask_Logo */}
-          <p className="metamask_title">Connect with MetaMask</p>
-        </div>
-        {/* metamask-btn */}
-        <div className="form">
-          <input type="text" placeholder="Address"></input>
-          <input type="submit"></input>
-        </div>
-        {/* form */}
-      </div>{" "}
-      {/* conteiner_login */}
+        <p className="frase">"Conecte-se ao futuro financeiro de maneira eficiente e rentável com nossa plataforma especializada em gerenciamento de lucros em criptoativos"</p>
+        <div className="call_to_action" onClick={chanceConnect}>
+          <p className="connect">Connect wallet</p>  
+        </div>{/* call_to_action */}
+      </div>{/* conteiner_login */}     
       <div className="price_section">
         <div className="price_content">
           <div className="price_title">
@@ -48,6 +60,17 @@ export default function Login() {
       </div>{/* price_section */}
       <div className="bg_btc"></div>
       <div className="bg_eth"></div>
+    </div>{/* login */}
+    {connect === "aberto" ?(
+            <div className="pop_up">
+              <div className="header_pop_up">
+                <p>Connect Wallet</p>
+                <FaTimes onClick={chanceConnect} className="xis" color="red" size="23px"/>
+              </div>
+            </div> 
+        ):(
+          ""
+        )}
     </>
   );
 }
