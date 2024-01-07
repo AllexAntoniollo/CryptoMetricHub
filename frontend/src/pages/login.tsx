@@ -66,6 +66,13 @@ export default function Login() {
               <div className="header_pop_up">
                 <p>Connect Wallet</p>
                 <FaTimes onClick={chanceConnect} className="xis" color="red" size="23px"/>
+                <div className="connect_popup">
+                  <p className="or">or</p>
+                  <div className="form">
+                    <input type="text" placeholder="Adress"></input>
+                    <input type="submit" value="connect" />
+                  </div>{/* form */}
+                </div>{/* connect_popup*/}
               </div>
             </div> 
         ):(
