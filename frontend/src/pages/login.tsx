@@ -64,9 +64,25 @@ export default function Login() {
     {connect === "aberto" ?(
             <div className="pop_up">
               <div className="header_pop_up">
-                <p>Connect Wallet</p>
-                <FaTimes onClick={chanceConnect} className="xis" color="red" size="23px"/>
+                <p className="title_popup">Connect Wallet</p>
+                <FaTimes onClick={chanceConnect} className="xis" size="23px"/>
                 <div className="connect_popup">
+                <div className="wallets">
+                  <div className="wallets_single">
+                    <img className="wallet_logo" src={require("../assets/metamask.png")} alt="Metamask"></img>
+                    <p className="wallets_name">MetaMask</p>
+                  </div>{/* wallets_single */}
+
+                  <div className="wallets_single">
+                    <img className="wallet_logo" src={require("../assets/metamask.png")} alt="Metamask"></img>
+                    <p className="wallets_name">MetaMask</p>
+                  </div>{/* wallets_single */}
+
+                  <div className="wallets_single">
+                    <img className="wallet_logo" src={require("../assets/metamask.png")} alt="Metamask"></img>
+                    <p className="wallets_name">MetaMask</p>
+                  </div>{/* wallets_single */}
+                </div>{/* wallets */}
                   <p className="or">or</p>
                   <div className="form">
                     <input type="text" placeholder="Adress"></input>
