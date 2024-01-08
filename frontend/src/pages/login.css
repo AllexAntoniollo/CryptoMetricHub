@@ -90,24 +90,23 @@ body {
   display: inline;
   color: #792cec;
 }
-p.frase{
+p.frase {
   margin: auto;
   margin-top: 60px;
   color: white;
   max-width: 80%;
   font-size: 20px;
-
 }
 /*CSS SECTION DE COTAÇÕES DA PAG DE LOGIN*/
 
-.price_section{
+.price_section {
   position: relative;
   z-index: 100;
   width: 100%;
   background-color: #313236;
 }
 
-.price_content{
+.price_content {
   position: relative;
   top: 35px;
   max-width: 80%;
@@ -117,7 +116,7 @@ p.frase{
   color: white;
 }
 
-.price_title{
+.price_title {
   padding-top: 20px;
   margin: auto;
   width: 30%;
@@ -126,35 +125,35 @@ p.frase{
   box-shadow: 2px 2px 5px black;
 }
 
-.price_table{
+.price_table {
   margin: auto;
   margin-top: 30px;
   width: 80%;
   height: 500px;
 }
 
-.price_table h1{
+.price_table h1 {
   font-size: 20px;
 }
 
-.w33{
+.w33 {
   display: inline-block;
   width: 33%;
   border-bottom: 2px solid rgb(27, 26, 26);
 }
 
-.cripto{
+.cripto {
   text-align: left;
   font-size: 16px;
   padding: 10px 0;
 }
-.up{
+.up {
   color: green;
 }
-.down{
+.down {
   color: red;
 }
-.call_to_action{
+.call_to_action {
   font-size: 18px;
   width: 230px;
   max-width: 80%;
@@ -165,15 +164,15 @@ p.frase{
   margin-top: 50px;
   cursor: pointer;
 }
-.call_to_action:hover{
+.call_to_action:hover {
   background-color: #792cec;
 }
-.call_to_action h1{
+.call_to_action h1 {
   color: white;
   font-size: 20px;
 }
 
-.pop_up{
+.pop_up {
   z-index: 500;
   position: fixed;
   top: 50%;
@@ -185,55 +184,56 @@ p.frase{
   box-shadow: 2px 2px 10px black;
   animation: open 0.5s;
 }
-.closed{
+.closed {
   animation: closed 0.5s;
 }
-@keyframes open{
-  from{
+@keyframes open {
+  from {
     width: 0;
     height: 0;
     opacity: 0;
   }
-  to{
+  to {
     width: 40%;
     height: 400px;
     opacity: 100%;
   }
 }
-@keyframes closed{
-  from{
+@keyframes closed {
+  from {
     opacity: 100%;
   }
-  to{
+  to {
     opacity: 0;
   }
 }
-.header_pop_up{
+.header_pop_up {
   display: flex;
   width: 100%;
 }
-.header_pop_up p{
+.header_pop_up p {
   color: white;
   margin: auto;
   margin-top: 20px;
   font-size: 25px;
 }
-.xis{
+.xis {
   color: #d20606;
   cursor: pointer;
   position: absolute;
   right: 2%;
+  font-size: 23px;
   top: 2%;
 }
-.xis:hover{
+.xis:hover {
   color: #b60606;
 }
 
-.blur{
+.blur {
   filter: blur(10px);
 }
 
-.connect_popup{
+.connect_popup {
   width: 90%;
   top: 45%;
   left: 50%;
@@ -243,10 +243,10 @@ p.frase{
   text-align: center;
 }
 
-.wallets{
+.wallets {
   width: 100%;
 }
-.wallets_single{
+.wallets_single {
   cursor: pointer;
   margin-right: 2%;
   padding: 2% 1%;
@@ -255,28 +255,28 @@ p.frase{
   display: inline-block;
   width: 28%;
 }
-img{
+img {
   width: 60%;
 }
-p.wallets_name{
+p.wallets_name {
   margin-top: 0;
   color: white;
   font-size: 1.3vw;
 }
 
-p.or{
+p.or {
   position: relative;
   margin-top: 20px;
   font-size: 16px;
   font-weight: 100;
 }
-.form{
+.form {
   position: absolute;
   width: 90%;
   left: 5%;
   padding: 30px 0;
 }
-.form input[type="text"]{
+.form input[type="text"] {
   padding: 0 8px;
   width: 50%;
   background-color: #27282b;
@@ -285,7 +285,7 @@ p.or{
   color: white;
   border: 0;
 }
-.form input[type="submit"]{
+.form input[type="submit"] {
   width: 28%;
   font-size: 16px;
   margin-left: 10px;
@@ -295,7 +295,7 @@ p.or{
   border: 0;
   cursor: pointer;
 }
-.form input[type="text"]:focus{
+.form input[type="text"]:focus {
   outline: none;
 }
 @media screen and (max-width: 780px) {
@@ -319,25 +319,25 @@ p.or{
     width: 200px;
   }
 
-  .price_title{
+  .price_title {
     width: 65%;
   }
 
-  .price_table h1{
+  .price_table h1 {
     font-size: 15px;
   }
 
-  .cripto{
+  .cripto {
     font-size: 13px;
     padding: 5px 0;
   }
-  .pop_up{
+  .pop_up {
     width: 80%;
   }
-  .pop_up p.title_popup{
+  .pop_up p.title_popup {
     font-size: 18px;
   }
-  p.wallets_name{
+  p.wallets_name {
     font-size: 2.5vw;
   }
 }
