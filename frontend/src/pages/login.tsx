@@ -1,5 +1,5 @@
 import Header from "../components/header";
-import "./login.css";
+import "./estilo.css";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 export default function Login() {

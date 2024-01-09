@@ -54,9 +54,9 @@ body {
 
 .detail_radius {
   margin: auto;
-  margin-top: -18vw;
+  margin-top: -20vw;
   background: linear-gradient(#2e3034, #2e3034) padding-box,
-    linear-gradient(to right, #4c21ac, #f18cf4) border-box;
+  linear-gradient(to right, #4c21ac, #f18cf4) border-box;
   border: 50px solid transparent;
   border-radius: 50em;
   width: 22vw;
@@ -65,17 +65,16 @@ body {
 
 .conteiner_login {
   max-width: 1000px;
-  padding: 30px;
+  padding: 20px;
   margin: auto;
   text-align: center;
 }
 
 .conect_title {
-  padding: 10px;
+  padding: 8px;
   color: white;
   font-size: 3vw;
   display: inline;
-
   border-bottom: 10px solid;
   border-image: linear-gradient(
     to right,
@@ -86,7 +85,7 @@ body {
 }
 
 .conect_title h2 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   display: inline;
   color: #792cec;
 }
@@ -95,7 +94,7 @@ p.frase {
   margin-top: 60px;
   color: white;
   max-width: 80%;
-  font-size: 20px;
+  font-size: 18px;
 }
 /*CSS SECTION DE COTAÇÕES DA PAG DE LOGIN*/
 
@@ -153,23 +152,20 @@ p.frase {
 .down {
   color: red;
 }
+
 .call_to_action {
-  font-size: 18px;
-  width: 230px;
+  font-size: 1.5vw;
+  width: 25%;
   max-width: 80%;
-  padding: 8px 12px;
+  padding: 2px 12px;
   background-color: #4c21ac;
   color: white;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   cursor: pointer;
 }
 .call_to_action:hover {
   background-color: #792cec;
-}
-.call_to_action h1 {
-  color: white;
-  font-size: 20px;
 }
 
 .pop_up {
@@ -233,6 +229,41 @@ p.frase {
   filter: blur(10px);
 }
 
+p.or {
+  position: relative;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+}
+.form {
+  margin: auto;
+  width: 60%;
+  padding: 10px 0;
+}
+.form input[type="text"] {
+  padding: 0 8px;
+  width: 50%;
+  background-color: #27282b;
+  font-size: 16px;
+  height: 35px;
+  color: white;
+  border: 0;
+}
+.form input[type="submit"] {
+  width: 28%;
+  font-size: 16px;
+  margin-left: 10px;
+  height: 35px;
+  color: rgb(151, 149, 149);
+  background-color: #222325;
+  border: 0;
+  cursor: pointer;
+}
+.form input[type="text"]:focus {
+  outline: none;
+}
+
 .connect_popup {
   width: 90%;
   top: 45%;
@@ -264,40 +295,6 @@ p.wallets_name {
   font-size: 1.3vw;
 }
 
-p.or {
-  position: relative;
-  margin-top: 20px;
-  font-size: 16px;
-  font-weight: 100;
-}
-.form {
-  position: absolute;
-  width: 90%;
-  left: 5%;
-  padding: 30px 0;
-}
-.form input[type="text"] {
-  padding: 0 8px;
-  width: 50%;
-  background-color: #27282b;
-  font-size: 16px;
-  height: 35px;
-  color: white;
-  border: 0;
-}
-.form input[type="submit"] {
-  width: 28%;
-  font-size: 16px;
-  margin-left: 10px;
-  height: 35px;
-  color: rgb(151, 149, 149);
-  background-color: #222325;
-  border: 0;
-  cursor: pointer;
-}
-.form input[type="text"]:focus {
-  outline: none;
-}
 @media screen and (max-width: 780px) {
   .detail_radius {
     border: 25px solid transparent;
@@ -340,4 +337,21 @@ p.or {
   p.wallets_name {
     font-size: 2.5vw;
   }
+  .form{
+    width: 100%;
+  }
+  .call_to_action{
+    width: 40%;
+    font-size: 2.5vw;
+  }
 }
+
+
+  /*################################################*/
+  /***------------HEADER.TSX ESTILOO--------------***/
+  /***------------HEADER.TSX ESTILOO--------------***/
+  /***------------HEADER.TSX ESTILOO--------------***/
+  /***------------HEADER.TSX ESTILOO--------------***/
+  /*################################################*/
+
+  
