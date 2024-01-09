@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import { Link } from "react-router-dom";
 import "./estilo.css";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
@@ -33,6 +34,7 @@ export default function Login() {
             nossa plataforma especializada em gerenciamento de lucros em
             criptoativos"
           </p>
+          <Link to={'/Dashboard'}>DashBoard</Link>
           <div className="call_to_action" onClick={chanceConnect}>
             <p className="connect">Connect wallet</p>
           </div>
