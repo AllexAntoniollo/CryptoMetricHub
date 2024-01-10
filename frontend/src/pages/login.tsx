@@ -22,6 +22,7 @@ export default function Login() {
   }
   return (
     <>
+    <div className="bg">
       <div className={connect === "aberto" ? "blur" : ""} onClick={closedPopUp}>
         <div className="detail_radius"></div>
         {/* detail_radius*/}
@@ -104,9 +105,10 @@ export default function Login() {
           {/* price_content */}
         </div>
         {/* price_section */}
+        </div>
         <div className="bg_btc"></div>
         <div className="bg_eth"></div>
-      </div>
+      </div> 
       {/* login */}
       {connect === "aberto" ? (
         <div className="pop_up">
@@ -154,6 +156,7 @@ export default function Login() {
             {/* connect_popup*/}
           </div>
         </div>
+      
       ) : (
         ""
       )}
